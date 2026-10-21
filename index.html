@@ -1,50 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Master Alex - DPTE Teacher</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Alex - Teacher | Hockey Player & Coach</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#f8fafc;color:#1e293b}
+.hero{background:linear-gradient(135deg,#0f172a,#1e40af);color:white;padding:50px 20px;text-align:center}
+.hero h1{font-size:2.2rem;margin-bottom:10px}
+.hero .tag{background:#22c55e;color:white;padding:6px 14px;border-radius:20px;font-size:0.9rem;display:inline-block;margin:5px}
+.btn{display:inline-block;background:#f59e0b;color:#000;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:bold;margin:10px 5px}
+.section{max-width:1000px;margin:20px auto;background:white;padding:20px;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+.hockey{background:linear-gradient(135deg,#fff7ed,#ffedd5);border-left:5px solid #f97316}
+.grade{background:#f1f5f9;border-radius:12px;margin:12px 0;overflow:hidden}
+.grade-head{padding:16px;background:#1e293b;color:white;cursor:pointer;display:flex;justify-content:space-between;font-weight:bold;font-size:1.1rem}
+.grade-body{display:none;padding:16px}
+.grade.active .grade-body{display:block}
+.area{display:flex;justify-content:space-between;align-items:center;padding:10px;background:white;margin:8px 0;border-radius:8px;border:1px solid #e2e8f0;flex-wrap:wrap}
+.area span{font-weight:600}
+.links a{font-size:0.8rem;padding:5px 10px;border-radius:6px;text-decoration:none;margin:2px;display:inline-block}
+.links a.notes{background:#dcfce7;color:#166534}
+.links a.schemes{background:#fef9c3;color:#854d0e}
+.links a.resources{background:#e0e7ff;color:#3730a3}
+</style>
 </head>
 <body>
-
-<!-- PROFILE -->
-<div style="text-align:center; padding:40px 20px; background:linear-gradient(135deg, #1a5276, #2e86c1); color:white;">
-<img src="alex.jpg" style="width:170px; height:170px; border-radius:50%; border:5px solid white; object-fit:cover;">
+<div class="hero">
 <h1>Master Alex</h1>
-<p style="font-size:18px;"><b>DPTE Teacher</b></p>
-<p>📍 Isiolo, Kenya</p>
-<p style="margin-top:15px;">Welcome to my teaching portfolio!</p>
-<a href="https://wa.me/254759679830?text=Habari%20Mwalimu%20Alex,%20nimeona%20website%20yako" target="_blank" style="display:inline-block; margin-top:20px; padding:12px 30px; background:#25D366; color:white; text-decoration:none; border-radius:25px; font-weight:bold; font-size:16px;">💬 WhatsApp Me</a>
+<p>DPTE Teacher | Hockey Player & Coach | Isiolo, Kenya</p>
+<div style="margin-top:15px">
+<span class="tag">📚 Teacher Grade 1-6</span>
+<span class="tag">🏑 Hockey Player & Coach</span>
+<span class="tag">🌍 Isiolo</span>
 </div>
-
-<!-- 9 SUBJECTS -->
-<div style="padding:30px 20px; max-width:1100px; margin:auto;">
-<h2 style="text-align:center; color:#1a5276; font-size:28px;">The 9 Subjects I Teach</h2>
-<div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap; margin-top:25px;">
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>1. Mathematics</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>2. Science</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>3. English</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>4. Kiswahili</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>5. CRE</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>6. Social Studies</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>7. Creative Arts</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>8. Agriculture</h3></div>
-<div style="border:1px solid #ddd; padding:20px; border-radius:10px; width:200px; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);"><h3>9. PE</h3></div>
+<div style="margin-top:20px">
+<a class="btn" href="#grades">View Grade 1-6 Materials</a>
+<a class="btn" style="background:white" href="#hockey">My Hockey Career</a>
 </div>
 </div>
 
-<!-- CONTACT -->
-<div style="text-align:center; padding:40px 20px; background:#1a5276; color:white; margin-top:30px;">
-<h2>Contact Me</h2>
-<p style="font-size:18px; margin:10px;">📧 Email: alexmugendi39@gmail.com</p>
-<p style="font-size:18px; margin:10px;">📱 Phone: 0759679830</p>
-<p style="font-size:18px; margin:10px;">📍 Location: Isiolo, Kenya</p>
-<a href="https://wa.me/254759679830" target="_blank" style="display:inline-block; margin-top:20px; padding:12px 30px; background:#25D366; color:white; text-decoration:none; border-radius:25px; font-weight:bold;">Chat on WhatsApp</a>
-<p style="margin-top:30px; font-size:13px; opacity:0.8;">© 2026 Master Alex | DPTE Teacher</p>
+<div class="section hockey" id="hockey">
+<h2>🏑 Hockey - Player & Coach</h2>
+<p style="margin:10px 0">In addition to teaching, I am a passionate <b>Hockey Player and Coach</b>. I believe sports builds discipline, teamwork and confidence in learners.</p>
+<ul style="margin-left:20px;line-height:1.8">
+<li>🏆 Active Hockey Player - Isiolo County Team</li>
+<li>👨‍🏫 Youth Hockey Coach - Training Primary School learners</li>
+<li>🎯 Focus: Discipline, Fitness, Teamwork & Talent Nurturing</li>
+<li>📍 Available for School Hockey Clinics & Coaching</li>
+</ul>
 </div>
 
-<!-- FLOATING WHATSAPP BUTTON -->
-<a href="https://wa.me/254759679830" target="_blank" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 18px; border-radius:50%; text-decoration:none; font-size:26px; box-shadow:0 4px 10px rgba(0,0,0,0.3);">💬</a>
+<div class="section" id="grades">
+<h2>📚 CBC Learning Materials - Grade 1 to Grade 6</h2>
+<p>Click any Grade to see Notes, Schemes & Learning Resources per Learning Area</p>
+<div id="grades-container"></div>
+</div>
 
+<div class="section" style="text-align:center">
+<h3>Contact Master Alex</h3>
+<p>Isiolo, Kenya | Teacher & Hockey Coach</p>
+<p>📞 WhatsApp: Your Number Here | 📧 Email: alexmugendi39@gmail.com</p>
+<p style="margin-top:10px;font-size:0.9rem;color:#64748b">© 2026 Master Alex - Free Education for All</p>
+</div>
+
+<script>
+const learningAreas = {
+ "Grade 1": ["Mathematics","English","Kiswahili","Environmental Activities","CRE","Movement & Creative"],
+ "Grade 2": ["Mathematics","English","Kiswahili","Environmental Activities","CRE","Movement & Creative"],
+ "Grade 3": ["Mathematics","English","Kiswahili","Environmental Activities","CRE","Hygiene & Nutrition"],
+ "Grade 4": ["Mathematics","English","Kiswahili","Science & Technology","Social Studies","Agriculture","CRE","Creative Arts"],
+ "Grade 5": ["Mathematics","English","Kiswahili","Science & Technology","Social Studies","Agriculture","CRE","Creative Arts"],
+ "Grade 6": ["Mathematics","English","Kiswahili","Science & Technology","Social Studies","Agriculture","CRE","Creative Arts"]
+};
+const container = document.getElementById('grades-container');
+Object.keys(learningAreas).forEach((grade, idx)=>{
+  const div = document.createElement('div');
+  div.className = 'grade' + (idx===0 ? ' active' : '');
+  let areasHTML = '';
+  learningAreas[grade].forEach(area=>{
+    areasHTML += `<div class="area"><span>${area}</span><div class="links"><a class="notes" href="#">📄 Notes</a><a class="schemes" href="#">📑 Schemes</a><a class="resources" href="#">🎥 Resources</a></div></div>`;
+  });
+  div.innerHTML = `<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>${grade}</span><span>▼</span></div><div class="grade-body">${areasHTML}</div>`;
+  container.appendChild(div);
+});
+</script>
 </body>
 </html>
