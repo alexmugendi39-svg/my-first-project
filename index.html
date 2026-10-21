@@ -3,86 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Master Alex - Teacher | Hockey Player & Coach</title>
+<title>Master Alex Academy</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui,sans-serif;background:#f8fafc;color:#1e293b}
-.hero{background:linear-gradient(135deg,#0f172a,#1e40af);color:white;padding:50px 20px;text-align:center}
-.hero h1{font-size:2.2rem;margin-bottom:10px}
-.hero .tag{background:#22c55e;color:white;padding:6px 14px;border-radius:20px;font-size:0.9rem;display:inline-block;margin:5px}
-.btn{display:inline-block;background:#f59e0b;color:#000;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:bold;margin:10px 5px}
-.section{max-width:1000px;margin:20px auto;background:white;padding:20px;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,0.05)}
-.hockey{background:linear-gradient(135deg,#fff7ed,#ffedd5);border-left:5px solid #f97316}
-.grade{background:#f1f5f9;border-radius:12px;margin:12px 0;overflow:hidden}
-.grade-head{padding:16px;background:#1e293b;color:white;cursor:pointer;display:flex;justify-content:space-between;font-weight:bold;font-size:1.1rem}
-.grade-body{display:none;padding:16px}
-.grade.active .grade-body{display:block}
-.area{display:flex;justify-content:space-between;align-items:center;padding:10px;background:white;margin:8px 0;border-radius:8px;border:1px solid #e2e8f0;flex-wrap:wrap}
-.area span{font-weight:600}
-.links a{font-size:0.8rem;padding:5px 10px;border-radius:6px;text-decoration:none;margin:2px;display:inline-block}
-.links a.notes{background:#dcfce7;color:#166534}
-.links a.schemes{background:#fef9c3;color:#854d0e}
-.links a.resources{background:#e0e7ff;color:#3730a3}
+body{font-family: sans-serif; background:#f1f5f9; margin:0; padding:20px;}
+.hero{background:#1e293b; color:white; padding:30px; border-radius:12px; text-align:center;}
+.grade{background:white; margin:15px 0; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.grade-head{padding:15px; display:flex; justify-content:space-between; cursor:pointer; font-weight:bold;}
+.grade-body{display:none; padding:0 15px 15px;}
+.grade.active .grade-body{display:block;}
+.area{display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #eee;}
+.links a{margin-left:10px; text-decoration:none; font-size:13px; padding:4px 8px; border-radius:5px; color:white;}
+.notes{background:#16a34a;} .schemes{background:#2563eb;}
 </style>
 </head>
 <body>
+
 <div class="hero">
-<h1>Master Alex</h1>
+<h1>Master Alex Academy</h1>
 <p>DPTE Teacher | Hockey Player & Coach | Isiolo, Kenya</p>
-<div style="margin-top:15px">
-<span class="tag">📚 Teacher Grade 1-6</span>
-<span class="tag">🏑 Hockey Player & Coach</span>
-<span class="tag">🌍 Isiolo</span>
-</div>
-<div style="margin-top:20px">
-<a class="btn" href="#grades">View Grade 1-6 Materials</a>
-<a class="btn" style="background:white" href="#hockey">My Hockey Career</a>
-</div>
 </div>
 
-<div class="section" id="gallery">
-<h2>📸 Blinders Hockey Team - Action</h2>
-<p>Team lineup, training and coaching moments</p>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:15px">
-<img src="images/blinders1.jpg" style="width:100%;border-radius:12px;height:220px;object-fit:cover">
-<img src="images/blinders2.jpg" style="width:100%;border-radius:12px;height:220px;object-fit:cover">
-<img src="images/blinders3.jpg" style="width:100%;border-radius:12px;height:220px;object-fit:cover">
-<img src="alex.jpg" style="width:100%;border-radius:12px;height:220px;object-fit:cover">
-</div>
-</div>
-<div class="section" id="grades">
-<h2>📚 CBC Learning Materials - Grade 1 to Grade 6</h2>
-<p>Click any Grade to see Notes, Schemes & Learning Resources per Learning Area</p>
-<div id="grades-container"></div>
-</div>
+<div class="section"></div>
 
-<div class="section" style="text-align:center">
-<h3>Contact Master Alex</h3>
-<p>Isiolo, Kenya | Teacher & Hockey Coach</p>
-<p>📞 WhatsApp:0759679830| Your Number Here | 📧 Email: alexmugendi39@gmail.com</p>
-<p style="margin-top:10px;font-size:0.9rem;color:#64748b">© 2026 Master Alex - Free Education for All</p>
-</div>
-
-<script>
-const learningAreas = {
- "Grade 1": ["Mathematics","English","Kiswahili","Environmental Activities","CRE","Movement & Creative"],
- "Grade 2": ["Mathematics","English","Kiswahili","Environmental Activities","CRE","Movement & Creative"],
- "Grade 3": ["Mathematics","English","Kiswahili","Environmental Activities","CRE","Hygiene & Nutrition"],
- "Grade 4": ["Mathematics","English","Kiswahili","Science & Technology","Social Studies","Agriculture","CRE","Creative Arts"],
- "Grade 5": ["Mathematics","English","Kiswahili","Science & Technology","Social Studies","Agriculture","CRE","Creative Arts"],
- "Grade 6": ["Mathematics","English","Kiswahili","Science & Technology","Social Studies","Agriculture","CRE","Creative Arts"]
-};
-const container = document.getElementById('grades-container');
-Object.keys(learningAreas).forEach((grade, idx)=>{
-  const div = document.createElement('div');
-  div.className = 'grade' + (idx===0 ? ' active' : '');
-  let areasHTML = '';
-  learningAreas[grade].forEach(area=>{
-    areasHTML += `<div class="area"><span>${area}</span><div class="links"><a class="notes" href="#">📄 Notes</a><a class="schemes" href="#">📑 Schemes</a><a class="resources" href="#">🎥 Resources</a></div></div>`;
-  });
-  div.innerHTML = `<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>${grade}</span><span>▼</span></div><div class="grade-body">${areasHTML}</div>`;
-  container.appendChild(div);
-});
-</script>
+<script src="config.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
