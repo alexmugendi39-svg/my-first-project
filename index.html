@@ -5,27 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Master Alex Academy</title>
 <style>
-body{font-family: sans-serif; background:#f1f5f9; margin:0; padding:20px;}
-.hero{background:#1e293b; color:white; padding:30px; border-radius:12px; text-align:center;}
-.grade{background:white; margin:15px 0; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-.grade-head{padding:15px; display:flex; justify-content:space-between; cursor:pointer; font-weight:bold;}
-.grade-body{display:none; padding:0 15px 15px;}
-.grade.active .grade-body{display:block;}
-.area{display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #eee;}
-.links a{margin-left:10px; text-decoration:none; font-size:13px; padding:4px 8px; border-radius:5px; color:white;}
-.notes{background:#16a34a;} .schemes{background:#2563eb;}
+body{font-family:sans-serif;background:#f1f5f9;margin:0}
+.hero{background:#1e293b;color:white;padding:40px 20px;text-align:center}
+.hero img{width:120px;height:120px;border-radius:50%;border:4px solid white;object-fit:cover}
+.pics{background:white;padding:15px;border-radius:12px;margin:15px;display:flex;gap:10px;overflow-x:auto}
+.pics img{width:160px;height:110px;object-fit:cover;border-radius:8px}
+.grade{background:white;margin:15px;border-radius:12px;overflow:hidden}
+.grade-head{padding:15px;display:flex;justify-content:space-between;cursor:pointer;font-weight:bold}
+.grade-body{display:none;padding:0 15px 15px}
+.grade.active .grade-body{display:block}
+.area{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eee}
+.links a{margin-left:10px;text-decoration:none;font-size:14px;padding:4px 10px;border-radius:5px;color:white}
+.notes{background:#16a34a}.schemes{background:#2563eb}
 </style>
 </head>
 <body>
-
 <div class="hero">
+<img src="alex.jpg" onerror="this.src='images/alex.jpg'">
 <h1>Master Alex Academy</h1>
-<p>DPTE Teacher | Hockey Player & Coach | Isiolo, Kenya</p>
+<p>DPTE Teacher | Isiolo | Grade 1-6</p>
 </div>
-
-<div class="section"></div>
-
-<script src="config.js"></script>
-<script src="index.js"></script>
+<div class="pics">
+<img src="images/binders1.jpg">
+<img src="images/binders2.jpg">
+<img src="images/binders3.jpg">
+<img src="images/binders4.jpg">
+</div>
+<div class="grade active">
+<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 1</span><span>▼</span></div>
+<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a><a class="schemes" href="#">Schemes</a></span></div></div>
+</div>
+<div class="grade">
+<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 6</span><span>▼</span></div>
+<div class="grade-body"><div class="area"><span>Math</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
+</div>
 </body>
 </html>
