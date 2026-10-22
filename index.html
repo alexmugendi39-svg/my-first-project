@@ -5,39 +5,103 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Master Alex Academy</title>
 <style>
-body{font-family:sans-serif;background:#f1f5f9;margin:0}
-.hero{background:#1e293b;color:white;padding:40px 20px;text-align:center}
-.hero img{width:120px;height:120px;border-radius:50%;border:4px solid white;object-fit:cover}
-.pics{background:white;padding:15px;border-radius:12px;margin:15px;display:flex;gap:10px;overflow-x:auto}
-.pics img{width:160px;height:110px;object-fit:cover;border-radius:8px}
-.grade{background:white;margin:15px;border-radius:12px;overflow:hidden}
-.grade-head{padding:15px;display:flex;justify-content:space-between;cursor:pointer;font-weight:bold}
-.grade-body{display:none;padding:0 15px 15px}
+body{font-family:system-ui,sans-serif;background:#f1f5f9;margin:0;color:#1e293b}
+.hero{background:#0f172a;color:white;padding:50px 20px;text-align:center}
+.hero img{width:130px;height:130px;border-radius:50%;border:4px solid white;object-fit:cover}
+.hero h1{margin:15px 0 5px;font-size:32px}
+.hero p{opacity:0.9;margin:5px 0}
+.btn{padding:10px 18px;border-radius:20px;text-decoration:none;color:white;display:inline-block;margin:5px;font-weight:bold;font-size:14px}
+.wa{background:#25D366} .call{background:#2563eb} .mail{background:#db2777}
+.container{max-width:900px;margin:auto;padding:15px}
+.card{background:white;padding:20px;border-radius:12px;margin:15px 0;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.pics{display:flex;gap:10px;overflow-x:auto;padding:10px 0}
+.pics img{width:180px;height:120px;object-fit:cover;border-radius:10px;flex-shrink:0}
+.grade{background:white;margin:12px 0;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+.grade-head{padding:16px;display:flex;justify-content:space-between;cursor:pointer;font-weight:bold;background:#fff}
+.grade-body{display:none;padding:0 15px 15px;border-top:1px solid #f1f5f9}
 .grade.active .grade-body{display:block}
-.area{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eee}
-.links a{margin-left:10px;text-decoration:none;font-size:14px;padding:4px 10px;border-radius:5px;color:white}
-.notes{background:#16a34a}.schemes{background:#2563eb}
+.area{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f8fafc;align-items:center}
+.links a{margin-left:8px;text-decoration:none;font-size:13px;padding:5px 12px;border-radius:6px;color:white}
+.notes{background:#16a34a}.schemes{background:#2563eb}.exams{background:#db2777}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.contact-item{background:#f8fafc;padding:12px;border-radius:8px;text-align:center}
+.hockey-badge{background:#f97316;color:white;padding:4px 10px;border-radius:15px;font-size:12px;font-weight:bold}
 </style>
 </head>
 <body>
+
 <div class="hero">
-<img src="alex.jpg" onerror="this.src='images/alex.jpg'">
+<img src="alex.jpg" onerror="this.src='images/alex.jpg'" alt="Alex">
 <h1>Master Alex Academy</h1>
-<p>DPTE Teacher | Isiolo | Grade 1-6</p>
+<p>DPTE Teacher | Isiolo | Grade 1-6 Resources</p>
+<p><span class="hockey-badge">🏑 Blinders Hockey Club - Meru</span></p>
+<p style="font-size:14px;margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.5">
+Passionate and enthusiastic teacher & hockey player. Playing for Blinders Hockey Club Meru. Dedicated to nurturing young minds in class and talent on the pitch.
+</p>
+<div style="margin-top:18px">
+<a class="btn wa" href="https://wa.me/254759679830">WhatsApp</a>
+<a class="btn call" href="tel:0759679830">Call: 0759679830</a>
+<a class="btn mail" href="mailto:alexmugendi39@gmail.com">Email Me</a>
 </div>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h3 style="margin:0 0 10px">📸 Blinders Hockey Club - Meru</h3>
 <div class="pics">
-<img src="images/blinders1.jpg">
-<img src="images/blinders2.jpg">
-<img src="images/blinders3.jpg">
-<img src="images/blinders4.jpg">
+<img src="images/blinders1.jpg" alt="Team">
+<img src="images/blinders2.jpg" alt="Team">
+<img src="images/blinders3.jpg" alt="Team">
 </div>
+</div>
+
+<div class="card">
+<h3 style="margin:0">📚 Learning Materials Grade 1 - 6</h3>
+<p style="font-size:14px;color:#64748b;margin:5px 0 0">Click grade to open Notes, Schemes, Exams</p>
+</div>
+
 <div class="grade active">
 <div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 1</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a><a class="schemes" href="#">Schemes</a></span></div></div>
+<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="pdfs/grade1/">Notes</a><a class="schemes" href="#">Schemes</a></span></div><div class="area"><span>English</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
 </div>
+
+<div class="grade">
+<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 2</span><span>▼</span></div>
+<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="pdfs/grade2/">Notes</a></span></div><div class="area"><span>English</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
+</div>
+
+<div class="grade">
+<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 3</span><span>▼</span></div>
+<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a></span></div><div class="area"><span>Science</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
+</div>
+
+<div class="grade">
+<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 4</span><span>▼</span></div>
+<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a></span></div><div class="area"><span>Science & Tech</span><span class="links"><a class="notes" href="#">Notes</a><a class="exams" href="#">Exams</a></span></div></div>
+</div>
+
+<div class="grade">
+<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 5</span><span>▼</span></div>
+<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a></span></div><div class="area"><span>English</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
+</div>
+
 <div class="grade">
 <div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 6</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Math</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
+<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a><a class="exams" href="#">Exams</a></span></div><div class="area"><span>KPSEA Prep</span><span class="links"><a class="exams" href="#">Past Papers</a></span></div></div>
 </div>
+
+<div class="card">
+<h3>📍 Contact Me</h3>
+<div class="contact-grid">
+<div class="contact-item"><b>Phone</b><br><a href="tel:0759679830">0759679830</a></div>
+<div class="contact-item"><b>Email</b><br><a href="mailto:alexmugendi39@gmail.com" style="font-size:13px">alexmugendi39@gmail.com</a></div>
+<div class="contact-item"><b>Location</b><br>Isiolo, Kenya</div>
+<div class="contact-item"><b>Hockey</b><br>Blinders HC - Meru</div>
+</div>
+</div>
+
+</div>
+
 </body>
 </html>
