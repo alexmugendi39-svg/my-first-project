@@ -1,107 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Master Alex Academy</title>
 <style>
-body{font-family:system-ui,sans-serif;background:#f1f5f9;margin:0;color:#1e293b}
-.hero{background:#0f172a;color:white;padding:50px 20px;text-align:center}
-.hero img{width:130px;height:130px;border-radius:50%;border:4px solid white;object-fit:cover}
-.hero h1{margin:15px 0 5px;font-size:32px}
-.hero p{opacity:0.9;margin:5px 0}
-.btn{padding:10px 18px;border-radius:20px;text-decoration:none;color:white;display:inline-block;margin:5px;font-weight:bold;font-size:14px}
-.wa{background:#25D366} .call{background:#2563eb} .mail{background:#db2777}
-.container{max-width:900px;margin:auto;padding:15px}
-.card{background:white;padding:20px;border-radius:12px;margin:15px 0;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
-.pics{display:flex;gap:10px;overflow-x:auto;padding:10px 0}
-.pics img{width:180px;height:120px;object-fit:cover;border-radius:10px;flex-shrink:0}
-.grade{background:white;margin:12px 0;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
-.grade-head{padding:16px;display:flex;justify-content:space-between;cursor:pointer;font-weight:bold;background:#fff}
-.grade-body{display:none;padding:0 15px 15px;border-top:1px solid #f1f5f9}
+body{font-family:system-ui;background:#f1f5f9;margin:0}
+.hero{background:#0f172a;color:#fff;padding:45px 15px;text-align:center}
+.hero img{width:120px;height:120px;border-radius:50%;border:3px solid #fff;object-fit:cover}
+.card{background:#fff;padding:15px;border-radius:12px;margin:12px;box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.pics{display:flex;gap:8px;overflow:auto}.pics img{width:170px;height:110px;border-radius:10px;object-fit:cover}
+.grade{background:#fff;margin:12px;border-radius:12px;overflow:hidden}
+.grade-head{padding:15px;font-weight:bold;display:flex;justify-content:space-between;cursor:pointer}
+.grade-body{display:none;padding:0 12px 10px;border-top:1px solid #eee}
 .grade.active .grade-body{display:block}
-.area{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #f8fafc;align-items:center}
-.links a{margin-left:8px;text-decoration:none;font-size:13px;padding:5px 12px;border-radius:6px;color:white}
-.notes{background:#16a34a}.schemes{background:#2563eb}.exams{background:#db2777}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-.contact-item{background:#f8fafc;padding:12px;border-radius:8px;text-align:center}
-.hockey-badge{background:#f97316;color:white;padding:4px 10px;border-radius:15px;font-size:12px;font-weight:bold}
+.area{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #f8fafc;flex-wrap:wrap}
+.area span{font-size:15px;flex:1;min-width:120px}
+.links a{padding:5px 10px;border-radius:6px;color:#fff;text-decoration:none;font-size:12px;margin:2px;display:inline-block}
+.n{background:#16a34a}.s{background:#2563eb}.e{background:#dc2626}
+.badge{background:#f97316;padding:3px 9px;border-radius:12px;font-size:11px}
 </style>
 </head>
 <body>
-
 <div class="hero">
-<img src="alex.jpg" onerror="this.src='images/alex.jpg'" alt="Alex">
-<h1>Master Alex Academy</h1>
-<p>DPTE Teacher | Isiolo | Grade 1-6 Resources</p>
-<p><span class="hockey-badge">🏑 Blinders Hockey Club - Meru</span></p>
-<p style="font-size:14px;margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.5">
-Passionate and enthusiastic teacher & hockey player. Playing for Blinders Hockey Club Meru. Dedicated to nurturing young minds in class and talent on the pitch.
-</p>
-<div style="margin-top:18px">
-<a class="btn wa" href="https://wa.me/254759679830">WhatsApp</a>
-<a class="btn call" href="tel:0759679830">Call: 0759679830</a>
-<a class="btn mail" href="mailto:alexmugendi39@gmail.com">Email Me</a>
-</div>
+<img src="alex.jpg" onerror="this.src='images/alex.jpg'">
+<h2>Master Alex Academy</h2>
+<p>DPTE Teacher | Isiolo | Blinders HC Meru <span class="badge">🏑 Hockey</span></p>
+<p style="font-size:13px;max-width:600px;margin:10px auto">Passionate & enthusiastic DPTE teacher and hockey player for Blinders Hockey Club Meru. 0759679830 | alexmugendi39@gmail.com</p>
+<a href="https://wa.me/254759679830" style="background:#25D366;color:#fff;padding:9px 15px;border-radius:20px;text-decoration:none;margin:3px;display:inline-block">WhatsApp</a>
+<a href="tel:0759679830" style="background:#2563eb;color:#fff;padding:9px 15px;border-radius:20px;text-decoration:none;margin:3px;display:inline-block">Call</a>
 </div>
 
-<div class="container">
+<div class="card"><b>📸 Blinders Hockey Club</b><div class="pics" style="margin-top:8px"><img src="images/blinders1.jpg"><img src="images/blinders2.jpg"><img src="images/blinders3.jpg"></div></div>
 
-<div class="card">
-<h3 style="margin:0 0 10px">📸 Blinders Hockey Club - Meru</h3>
-<div class="pics">
-<img src="images/blinders1.jpg" alt="Team">
-<img src="images/blinders2.jpg" alt="Team">
-<img src="images/blinders3.jpg" alt="Team">
-</div>
-</div>
+<div class="card"><b>📚 CBC Learning Materials Grade 1-6</b><br><small>Click grade to open - All 9 areas for upper primary</small></div>
 
-<div class="card">
-<h3 style="margin:0">📚 Learning Materials Grade 1 - 6</h3>
-<p style="font-size:14px;color:#64748b;margin:5px 0 0">Click grade to open Notes, Schemes, Exams</p>
-</div>
+<!-- GRADE 1 - 7 AREAS -->
+<div class="grade active"><div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 1 (7 Areas)</span><span>▼</span></div><div class="grade-body">
+<div class="area"><span>1. Mathematics</span><div class="links"><a class="n" href="pdfs/grade1/math-notes.pdf">Notes</a><a class="s" href="pdfs/grade1/math-schemes.pdf">Schemes</a><a class="e" href="pdfs/grade1/math-exams.pdf">Exams</a></div></div>
+<div class="area"><span>2. English</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>3. Kiswahili</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>4. CRE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>5. Environmental</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>6. Creative Arts</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>7. Movement & Creative</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+</div></div>
 
-<div class="grade active">
-<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 1</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="pdfs/grade1/">Notes</a><a class="schemes" href="#">Schemes</a></span></div><div class="area"><span>English</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
-</div>
+<!-- GRADE 2 & 3 SAME 7 -->
+<div class="grade"><div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 2 (7 Areas)</span><span>▼</span></div><div class="grade-body">
+<div class="area"><span>Mathematics</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>English</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Kiswahili</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>CRE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Environmental</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Creative Arts</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Hygiene</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+</div></div>
 
-<div class="grade">
-<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 2</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="pdfs/grade2/">Notes</a></span></div><div class="area"><span>English</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
-</div>
+<div class="grade"><div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 3 (7 Areas)</span><span>▼</span></div><div class="grade-body">
+<div class="area"><span>Mathematics</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>English</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Kiswahili</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>CRE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Environmental</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Creative Arts</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>Hygiene</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+</div></div>
 
-<div class="grade">
-<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 3</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a></span></div><div class="area"><span>Science</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
-</div>
+<!-- UPPER PRIMARY 9 AREAS -->
+<div class="grade"><div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 4 (9 Areas)</span><span>▼</span></div><div class="grade-body">
+<div class="area"><span>1. Mathematics</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>2. English</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>3. Kiswahili</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>4. Science & Tech</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>5. Social Studies</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>6. CRE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>7. Agriculture</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>8. Creative Arts</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>9. PHE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+</div></div>
 
-<div class="grade">
-<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 4</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a></span></div><div class="area"><span>Science & Tech</span><span class="links"><a class="notes" href="#">Notes</a><a class="exams" href="#">Exams</a></span></div></div>
-</div>
+<div class="grade"><div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 5 (9 Areas)</span><span>▼</span></div><div class="grade-body">
+<div class="area"><span>1. Mathematics</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>2. English</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>3. Kiswahili</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>4. Science & Tech</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>5. Social Studies</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>6. CRE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>7. Agriculture</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>8. Creative Arts</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>9. PHE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+</div></div>
 
-<div class="grade">
-<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 5</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a></span></div><div class="area"><span>English</span><span class="links"><a class="notes" href="#">Notes</a></span></div></div>
-</div>
+<div class="grade"><div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 6 (9 Areas + KPSEA)</span><span>▼</span></div><div class="grade-body">
+<div class="area"><span>1. Mathematics</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>2. English</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>3. Kiswahili</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>4. Science & Tech</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>5. Social Studies</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>6. CRE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>7. Agriculture</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>8. Creative Arts</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>9. PHE</span><div class="links"><a class="n" href="#">Notes</a><a class="s" href="#">Schemes</a><a class="e" href="#">Exams</a></div></div>
+<div class="area"><span>⭐ KPSEA Past Papers</span><div class="links"><a class="e" href="#">2023</a><a class="e" href="#">2024</a></div></div>
+</div></div>
 
-<div class="grade">
-<div class="grade-head" onclick="this.parentElement.classList.toggle('active')"><span>Grade 6</span><span>▼</span></div>
-<div class="grade-body"><div class="area"><span>Mathematics</span><span class="links"><a class="notes" href="#">Notes</a><a class="exams" href="#">Exams</a></span></div><div class="area"><span>KPSEA Prep</span><span class="links"><a class="exams" href="#">Past Papers</a></span></div></div>
-</div>
-
-<div class="card">
-<h3>📍 Contact Me</h3>
-<div class="contact-grid">
-<div class="contact-item"><b>Phone</b><br><a href="tel:0759679830">0759679830</a></div>
-<div class="contact-item"><b>Email</b><br><a href="mailto:alexmugendi39@gmail.com" style="font-size:13px">alexmugendi39@gmail.com</a></div>
-<div class="contact-item"><b>Location</b><br>Isiolo, Kenya</div>
-<div class="contact-item"><b>Hockey</b><br>Blinders HC - Meru</div>
-</div>
-</div>
-
-</div>
+<div class="card" style="text-align:center"><b>Contact:</b> 0759679830 | alexmugendi39@gmail.com | Isiolo<br><small>© Master Alex Academy 2026 - Blinders Hockey Club Meru</small></div>
 
 </body>
 </html>
