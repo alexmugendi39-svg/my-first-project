@@ -7,83 +7,107 @@
 <style>
 body{font-family:Arial; margin:0; background:#f5f7fb; color:#111}
 header{background:#0b1220; color:white; padding:24px; text-align:center}
-header h1{margin:0; font-size:28px}
+header img{width:110px; height:110px; border-radius:50%; border:3px solid white; object-fit:cover}
+header h1{margin:10px 0 0; font-size:28px}
 header p{margin:6px 0 0; opacity:.9}
+.hockey{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin:20px}
+.hockey img{width:150px; height:100px; object-fit:cover; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.2)}
 .grade{background:white; margin:20px; padding:16px; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,.06)}
-.grade h2{margin:0 0 12px; color:#0b1220}
+.grade h2{margin:0 0 12px; color:#0b1220; border-left:4px solid #2563eb; padding-left:8px}
 .subject{background:#f8fafc; margin:10px 0; padding:12px; border-radius:12px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap}
 .subject b{font-size:15px}
 .links{display:flex; gap:8px; flex-wrap:wrap; margin-top:6px}
-.links a{padding:8px 12px; border-radius:20px; text-decoration:none; font-size:13px; font-weight:bold; color:white}
-.cd{background:#6b21a8} /* Curriculum Design - Purple */
-.s{background:#2563eb} /* Schemes - Blue */
-.n{background:#16a34a} /* Notes - Green */
-.e{background:#dc2626} /* Exams - Red */
+.links a{padding:8px 12px; border-radius:20px; text-decoration:none; font-size:12px; font-weight:bold; color:white}
+.cd{background:#6b21a8} .s{background:#2563eb} .n{background:#16a34a} .e{background:#dc2626}
 footer{text-align:center; padding:20px; color:#666}
 </style>
 </head>
 <body>
 
 <header>
+<img src="images/alex.jpg" alt="Alex">
 <h1>Alex Portfolio</h1>
-<p>Blinders Hockey Club Meru | Teacher & Athlete | 0759679830</p>
+<p>Teacher, Hockey Player and Coach | Blinders Hockey Club Meru | 0759679830</p>
 </header>
 
-<div class="grade">
-<h2>Grade 1 - 7 Learning Areas</h2>
-
-<div class="subject"><b>Mathematics</b><div class="links">
-<a class="cd" href="pdfs/grade1/math-curriculum.pdf">Curriculum Design</a>
-<a class="s" href="pdfs/grade1/math-schemes.pdf">Schemes</a>
-<a class="n" href="pdfs/grade1/math-notes.pdf">Notes</a>
-<a class="e" href="pdfs/grade1/math-exams.pdf">Exams</a>
-</div></div>
-
-<div class="subject"><b>English</b><div class="links">
-<a class="cd" href="pdfs/grade1/english-curriculum.pdf">Curriculum Design</a>
-<a class="s" href="pdfs/grade1/english-schemes.pdf">Schemes</a>
-<a class="n" href="pdfs/grade1/english-notes.pdf">Notes</a>
-<a class="e" href="pdfs/grade1/english-exams.pdf">Exams</a>
-</div></div>
-
-<div class="subject"><b>Kiswahili</b><div class="links">
-<a class="cd" href="pdfs/grade1/kiswahili-curriculum.pdf">Curriculum Design</a>
-<a class="s" href="pdfs/grade1/kiswahili-schemes.pdf">Schemes</a>
-<a class="n" href="pdfs/grade1/kiswahili-notes.pdf">Notes</a>
-<a class="e" href="pdfs/grade1/kiswahili-exams.pdf">Exams</a>
-</div></div>
-
+<div class="hockey">
+<img src="images/blinders1.jpg" alt="Blinders">
+<img src="images/blinders2.jpg" alt="Blinders">
+<img src="images/blinders3.jpg" alt="Blinders">
 </div>
 
-<div class="grade">
-<h2>Grade 4-6 - 9 Learning Areas (CBC)</h2>
-
-<div class="subject"><b>Mathematics</b><div class="links">
-<a class="cd" href="pdfs/grade4/math-curriculum.pdf">Curriculum Design</a>
-<a class="s" href="pdfs/grade4/math-schemes.pdf">Schemes</a>
-<a class="n" href="pdfs/grade4/math-notes.pdf">Notes</a>
-<a class="e" href="pdfs/grade4/math-exams.pdf">Exams</a>
-</div></div>
-
-<div class="subject"><b>English</b><div class="links">
-<a class="cd" href="pdfs/grade4/english-curriculum.pdf">Curriculum Design</a>
-<a class="s" href="pdfs/grade4/english-schemes.pdf">Schemes</a>
-<a class="n" href="pdfs/grade4/english-notes.pdf">Notes</a>
-<a class="e" href="pdfs/grade4/english-exams.pdf">Exams</a>
-</div></div>
-
-<div class="subject"><b>Science & Technology</b><div class="links">
-<a class="cd" href="pdfs/grade4/science-curriculum.pdf">Curriculum Design</a>
-<a class="s" href="pdfs/grade4/science-schemes.pdf">Schemes</a>
-<a class="n" href="pdfs/grade4/science-notes.pdf">Notes</a>
-<a class="e" href="pdfs/grade4/science-exams.pdf">Exams</a>
-</div></div>
-
-<p style="font-size:12px; color:#666">Copy same pattern for other 6 areas: Kiswahili, Social Studies, CRE, Agriculture, Creative Arts, PHE</p>
-
+<!-- GRADE 1 -->
+<div class="grade"><h2>Grade 1 - 7 Learning Areas</h2>
+<div class="subject"><b>1. Mathematics</b><div class="links"><a class="cd" href="pdfs/grade1/math-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade1/math-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade1/math-notes.pdf">Notes</a><a class="e" href="pdfs/grade1/math-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>2. English</b><div class="links"><a class="cd" href="pdfs/grade1/english-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade1/english-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade1/english-notes.pdf">Notes</a><a class="e" href="pdfs/grade1/english-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>3. Kiswahili</b><div class="links"><a class="cd" href="pdfs/grade1/kiswahili-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade1/kiswahili-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade1/kiswahili-notes.pdf">Notes</a><a class="e" href="pdfs/grade1/kiswahili-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>4. Environmental Activities</b><div class="links"><a class="cd" href="pdfs/grade1/env-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade1/env-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade1/env-notes.pdf">Notes</a><a class="e" href="pdfs/grade1/env-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>5. CRE</b><div class="links"><a class="cd" href="pdfs/grade1/cre-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade1/cre-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade1/cre-notes.pdf">Notes</a><a class="e" href="pdfs/grade1/cre-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>6. Creative Activities</b><div class="links"><a class="cd" href="pdfs/grade1/creative-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade1/creative-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade1/creative-notes.pdf">Notes</a><a class="e" href="pdfs/grade1/creative-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>7. PHE</b><div class="links"><a class="cd" href="pdfs/grade1/phe-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade1/phe-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade1/phe-notes.pdf">Notes</a><a class="e" href="pdfs/grade1/phe-exams.pdf">Exams</a></div></div>
 </div>
 
-<footer>© 2026 Alex Portfolio | Isiolo - Meru | Blinders HC</footer>
+<!-- GRADE 2 - Copy same 7 -->
+<div class="grade"><h2>Grade 2 - 7 Learning Areas</h2>
+<div class="subject"><b>1. Mathematics</b><div class="links"><a class="cd" href="pdfs/grade2/math-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade2/math-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade2/math-notes.pdf">Notes</a><a class="e" href="pdfs/grade2/math-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>2. English</b><div class="links"><a class="cd" href="pdfs/grade2/english-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade2/english-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade2/english-notes.pdf">Notes</a><a class="e" href="pdfs/grade2/english-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>3. Kiswahili</b><div class="links"><a class="cd" href="pdfs/grade2/kiswahili-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade2/kiswahili-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade2/kiswahili-notes.pdf">Notes</a><a class="e" href="pdfs/grade2/kiswahili-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>4. Environmental</b><div class="links"><a class="cd" href="pdfs/grade2/env-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade2/env-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade2/env-notes.pdf">Notes</a><a class="e" href="pdfs/grade2/env-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>5. CRE</b><div class="links"><a class="cd" href="pdfs/grade2/cre-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade2/cre-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade2/cre-notes.pdf">Notes</a><a class="e" href="pdfs/grade2/cre-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>6. Creative Activities</b><div class="links"><a class="cd" href="pdfs/grade2/creative-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade2/creative-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade2/creative-notes.pdf">Notes</a><a class="e" href="pdfs/grade2/creative-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>7. PHE</b><div class="links"><a class="cd" href="pdfs/grade2/phe-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade2/phe-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade2/phe-notes.pdf">Notes</a><a class="e" href="pdfs/grade2/phe-exams.pdf">Exams</a></div></div>
+</div>
+
+<!-- GRADE 3 -->
+<div class="grade"><h2>Grade 3 - 7 Learning Areas</h2>
+<div class="subject"><b>1. Mathematics</b><div class="links"><a class="cd" href="pdfs/grade3/math-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade3/math-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade3/math-notes.pdf">Notes</a><a class="e" href="pdfs/grade3/math-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>2. English</b><div class="links"><a class="cd" href="pdfs/grade3/english-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade3/english-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade3/english-notes.pdf">Notes</a><a class="e" href="pdfs/grade3/english-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>3. Kiswahili</b><div class="links"><a class="cd" href="pdfs/grade3/kiswahili-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade3/kiswahili-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade3/kiswahili-notes.pdf">Notes</a><a class="e" href="pdfs/grade3/kiswahili-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>4. Environmental</b><div class="links"><a class="cd" href="pdfs/grade3/env-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade3/env-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade3/env-notes.pdf">Notes</a><a class="e" href="pdfs/grade3/env-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>5. CRE</b><div class="links"><a class="cd" href="pdfs/grade3/cre-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade3/cre-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade3/cre-notes.pdf">Notes</a><a class="e" href="pdfs/grade3/cre-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>6. Creative Activities</b><div class="links"><a class="cd" href="pdfs/grade3/creative-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade3/creative-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade3/creative-notes.pdf">Notes</a><a class="e" href="pdfs/grade3/creative-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>7. PHE</b><div class="links"><a class="cd" href="pdfs/grade3/phe-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade3/phe-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade3/phe-notes.pdf">Notes</a><a class="e" href="pdfs/grade3/phe-exams.pdf">Exams</a></div></div>
+</div>
+
+<!-- GRADE 4 - 9 AREAS -->
+<div class="grade"><h2>Grade 4 - 9 Learning Areas</h2>
+<div class="subject"><b>1. Mathematics</b><div class="links"><a class="cd" href="pdfs/grade4/math-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/math-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/math-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/math-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>2. English</b><div class="links"><a class="cd" href="pdfs/grade4/english-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/english-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/english-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/english-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>3. Kiswahili</b><div class="links"><a class="cd" href="pdfs/grade4/kiswahili-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/kiswahili-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/kiswahili-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/kiswahili-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>4. Science & Technology</b><div class="links"><a class="cd" href="pdfs/grade4/science-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/science-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/science-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/science-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>5. Social Studies</b><div class="links"><a class="cd" href="pdfs/grade4/social-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/social-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/social-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/social-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>6. CRE</b><div class="links"><a class="cd" href="pdfs/grade4/cre-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/cre-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/cre-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/cre-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>7. Agriculture</b><div class="links"><a class="cd" href="pdfs/grade4/agri-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/agri-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/agri-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/agri-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>8. Creative Arts</b><div class="links"><a class="cd" href="pdfs/grade4/creative-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/creative-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/creative-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/creative-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>9. PHE</b><div class="links"><a class="cd" href="pdfs/grade4/phe-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade4/phe-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade4/phe-notes.pdf">Notes</a><a class="e" href="pdfs/grade4/phe-exams.pdf">Exams</a></div></div>
+</div>
+
+<!-- GRADE 5 & 6 COPY SAME AS GRADE 4 -->
+<div class="grade"><h2>Grade 5 - 9 Learning Areas</h2>
+<div class="subject"><b>1. Mathematics</b><div class="links"><a class="cd" href="pdfs/grade5/math-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/math-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/math-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/math-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>2. English</b><div class="links"><a class="cd" href="pdfs/grade5/english-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/english-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/english-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/english-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>3. Kiswahili</b><div class="links"><a class="cd" href="pdfs/grade5/kiswahili-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/kiswahili-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/kiswahili-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/kiswahili-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>4. Science & Technology</b><div class="links"><a class="cd" href="pdfs/grade5/science-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/science-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/science-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/science-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>5. Social Studies</b><div class="links"><a class="cd" href="pdfs/grade5/social-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/social-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/social-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/social-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>6. CRE</b><div class="links"><a class="cd" href="pdfs/grade5/cre-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/cre-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/cre-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/cre-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>7. Agriculture</b><div class="links"><a class="cd" href="pdfs/grade5/agri-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/agri-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/agri-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/agri-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>8. Creative Arts</b><div class="links"><a class="cd" href="pdfs/grade5/creative-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/creative-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/creative-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/creative-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>9. PHE</b><div class="links"><a class="cd" href="pdfs/grade5/phe-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade5/phe-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade5/phe-notes.pdf">Notes</a><a class="e" href="pdfs/grade5/phe-exams.pdf">Exams</a></div></div>
+</div>
+
+<div class="grade"><h2>Grade 6 - 9 Learning Areas + KPSEA</h2>
+<div class="subject"><b>1. Mathematics</b><div class="links"><a class="cd" href="pdfs/grade6/math-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/math-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/math-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/math-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>2. English</b><div class="links"><a class="cd" href="pdfs/grade6/english-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/english-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/english-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/english-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>3. Kiswahili</b><div class="links"><a class="cd" href="pdfs/grade6/kiswahili-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/kiswahili-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/kiswahili-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/kiswahili-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>4. Science & Technology</b><div class="links"><a class="cd" href="pdfs/grade6/science-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/science-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/science-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/science-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>5. Social Studies</b><div class="links"><a class="cd" href="pdfs/grade6/social-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/social-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/social-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/social-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>6. CRE</b><div class="links"><a class="cd" href="pdfs/grade6/cre-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/cre-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/cre-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/cre-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>7. Agriculture</b><div class="links"><a class="cd" href="pdfs/grade6/agri-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/agri-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/agri-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/agri-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>8. Creative Arts</b><div class="links"><a class="cd" href="pdfs/grade6/creative-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/creative-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/creative-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/creative-exams.pdf">Exams</a></div></div>
+<div class="subject"><b>9. PHE</b><div class="links"><a class="cd" href="pdfs/grade6/phe-curriculum.pdf">Curriculum Design</a><a class="s" href="pdfs/grade6/phe-schemes.pdf">Schemes</a><a class="n" href="pdfs/grade6/phe-notes.pdf">Notes</a><a class="e" href="pdfs/grade6/phe-exams.pdf">Exams</a></div></div>
+</div>
+
+<footer>© 2026 Alex Portfolio | Isiolo - Meru | Blinders Hockey Club</footer>
 
 </body>
 </html>
