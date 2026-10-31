@@ -12,31 +12,28 @@ const grade1Designs = [
 ];
 
 function makeLinks(files, grade, folder) {
-  return files.map(f => `<a href="pdfs/${grade}/${folder}/${f}.pdf" target="_blank">📄 ${f.replace(/-/g,' ').replace('GRADE 1','')}</a>`).join('');
+  return files.map(f => {
+    let name = f.replace('GRADE-1-','').replace('-Rationalized-Curriculum-Design','').replace(/-/g,' ');
+    return `<a href="pdfs/${grade}/${folder}/${f}.pdf" target="_blank">📄 ${name}</a>`;
+  }).join('');
 }
 
 container.innerHTML = `
 <div class="grade">
-  <h2>Grade 1</h2>
-  
+  <h2>Grade 1 - CBC Materials</h2>
   <div class="subject">
     <b>📘 CURRICULUM DESIGNS</b>
     <div class="links">${makeLinks(grade1Designs, 'grade1', 'designs')}</div>
   </div>
-
   <div class="subject">
     <b>📗 SCHEMES OF WORK</b>
-    <div class="links"><a href="pdfs/grade1/schemes/">Open Schemes Folder</a></div>
+    <div class="links"><a href="pdfs/grade1/schemes/" target="_blank">Open Schemes</a></div>
   </div>
-
   <div class="subject">
     <b>📙 NOTES</b>
-    <div class="links"><a href="pdfs/grade1/notes/">Open Notes Folder</a></div>
+    <div class="links"><a href="pdfs/grade1/notes/" target="_blank">Open Notes</a></div>
   </div>
 </div>
 
-<div class="grade">
-  <h2>Grade 2 - 6</h2>
-  <p>Copy same method - add designs to pdfs/grade2/designs/ etc</p>
-</div>
+<div class="grade"><h2>Grade 2 - 6</h2><p>Add files same way - pdfs/grade2/designs/ etc. Then we update index.js</p></div>
 `;
