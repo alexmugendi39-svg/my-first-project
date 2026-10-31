@@ -1,39 +1,59 @@
-const container = document.getElementById('grades-container');
+const container = document.getElementById("grades-container");
 
-const grade1Designs = [
-  "GRADE-1-CRE-Rationalized-Curriculum-Design",
-  "GRADE-1-Creative-Activities-Rationalized-Curriculum-Design",
-  "GRADE-1-English-Rationalized-Curriculum-Design",
-  "GRADE-1-Environmental-Activities-Rationalized-Curriculum-Design",
-  "GRADE-1-Indigenous-Languages-Rationalized-Curriculum-Design",
-  "GRADE-1-IRE-Rationalized-Curriculum-Design",
-  "GRADE-1-Kiswahili-Rationalized-Curriculum-Design",
-  "GRADE-1-Mathematics-Rationalized-Curriculum-Design"
+// Grade 1 - tunatumia majina halisi ya files uli-upload
+const grade1Files = {
+  "CRE": "GRADE-1-CRE-CURRICULUM-DESIGN-Rationalized-Curriculum-Design-1.pdf",
+  "Creative Arts": "GRADE-1-CREATIVE-ACTIVITIES-CURRICULUM-DESIGN-Rationalized-Curriculum-Design.pdf",
+  "English": "GRADE-1-ENGLISH-CURRICULUM-DESIGN-Rationalized-Curriculum-Design.pdf",
+  "Environmental": "GRADE-1-ENVIRONMENTAL-ACTIVITIES-CURRICULUM-DESIGN-Rationalized-Curriculum-Design.pdf",
+  "Indigenous": "GRADE-1-INDIGENOUS-LANGUAGES-CURRICULUM-DESIGN-Rationalized-Curriculum-Design.pdf",
+  "Kiswahili": "GRADE-1-KISWAHILI-CURRICULUM-DESIGN-Rationalized-Curriculum-Design.pdf",
+  "Mathematics": "GRADE-1-MATHEMATICS-CURRICULUM-DESIGN-Rationalized-Curriculum-Design.pdf"
+};
+
+const gradesData = [
+  { grade: 1, areas: ["Mathematics", "English", "Kiswahili", "Environmental", "CRE", "Creative Arts", "Indigenous"] },
+  { grade: 2, areas: ["Mathematics", "English", "Kiswahili", "Environmental", "CRE", "Creative Arts", "Indigenous", "Literacy"] },
+  { grade: 3, areas: ["Mathematics", "English", "Kiswahili", "Environmental", "CRE", "Creative Arts", "Indigenous", "Literacy"] },
+  { grade: 4, areas: ["Mathematics", "English", "Kiswahili", "Science & Technology", "Social Studies", "Agriculture", "CRE", "Creative Arts"] },
+  { grade: 5, areas: ["Mathematics", "English", "Kiswahili", "Science & Technology", "Social Studies", "Agriculture", "CRE", "Creative Arts"] },
+  { grade: 6, areas: ["Mathematics", "English", "Kiswahili", "Science & Technology", "Social Studies", "Agriculture", "CRE", "Creative Arts", "Home Science"] }
 ];
 
-function makeLinks(files, grade, folder) {
-  return files.map(f => {
-    let name = f.replace('GRADE-1-','').replace('-Rationalized-Curriculum-Design','').replace(/-/g,' ');
-    return `<a href="pdfs/${grade}/${folder}/${f}.pdf" target="_blank">📄 ${name}</a>`;
-  }).join('');
-}
+gradesData.forEach(g => {
+  const gradeDiv = document.createElement("div");
+  gradeDiv.className = "grade";
+  
+  let html = `<h2>Grade ${g.grade} - ${g.areas.length} Learning Areas</h2>`;
+  
+  g.areas.forEach(subject => {
+    let designPath, schemePath, notesPath, examsPath;
+    
+    if (g.grade === 1 && grade1Files[subject]) {
+      designPath = `pdfs/grade1/designs/${grade1Files[subject]}`;
+    } else {
+      // For other grades, generic path - uta-add files baadaye
+      const fileName = subject.replace(/ & /g, "-").replace(/ /g, "-").toUpperCase();
+      designPath = `pdfs/grade${g.grade}/designs/${fileName}.pdf`;
+    }
+    
+    schemePath = `pdfs/grade${g.grade}/schemes/${subject}.pdf`;
+    notesPath = `pdfs/grade${g.grade}/notes/${subject}.pdf`;
+    examsPath = `pdfs/grade${g.grade}/exams/${subject}.pdf`;
 
-container.innerHTML = `
-<div class="grade">
-  <h2>Grade 1 - CBC Materials</h2>
-  <div class="subject">
-    <b>📘 CURRICULUM DESIGNS</b>
-    <div class="links">${makeLinks(grade1Designs, 'grade1', 'designs')}</div>
-  </div>
-  <div class="subject">
-    <b>📗 SCHEMES OF WORK</b>
-    <div class="links"><a href="pdfs/grade1/schemes/" target="_blank">Open Schemes</a></div>
-  </div>
-  <div class="subject">
-    <b>📙 NOTES</b>
-    <div class="links"><a href="pdfs/grade1/notes/" target="_blank">Open Notes</a></div>
-  </div>
-</div>
-
-<div class="grade"><h2>Grade 2 - 6</h2><p>Add files same way - pdfs/grade2/designs/ etc. Then we update index.js</p></div>
-`;
+    html += `
+      <div class="subject">
+        <b>${subject}</b>
+        <div class="links">
+          <a class="design" href="${designPath}" target="_blank">📄 Designs</a>
+          <a class="scheme" href="${schemePath}" target="_blank">📘 Schemes</a>
+          <a class="notes" href="${notesPath}" target="_blank">📝 Notes</a>
+          <a class="exams" href="${examsPath}" target="_blank">📝 Exams</a>
+        </div>
+      </div>
+    `;
+  });
+  
+  gradeDiv.innerHTML = html;
+  container.appendChild(gradeDiv);
+});

@@ -6,40 +6,60 @@
 <title>Alex Portfolio</title>
 <style>
 body{font-family:Arial; margin:0; background:#f5f7fb; color:#111}
-header{background:#0b1220; color:white; padding:24px; text-align:center}
-header img{width:110px; height:110px; border-radius:50%; border:3px solid white; object-fit:cover}
-header h1{margin:10px 0 0; font-size:28px}
-header p{margin:6px 0 0; opacity:.9}
+header{background:#0b1220; color:white; padding:28px; text-align:center}
+header img{width:120px; height:120px; border-radius:50%; border:3px solid #fff; object-fit:cover}
+header h1{margin:12px 0 4px; font-size:30px}
+header p{margin:4px 0; opacity:.9; line-height:1.5}
+.about{background:white; margin:20px; padding:22px; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,.1); line-height:1.8}
+.about h2{color:#0b1220; border-left:4px solid #2563eb; padding-left:10px; margin-top:0}
 .hockey{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin:20px}
-.hockey img{width:150px; height:100px; object-fit:cover; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.hockey img{width:170px; height:115px; object-fit:cover; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.2)}
 .grade{background:white; margin:20px; padding:16px; border-radius:16px; box-shadow:0 4px 12px rgba(0,0,0,.1)}
 .grade h2{margin:0 0 12px; color:#0b1220; border-left:4px solid #2563eb; padding-left:8px}
-.subject{background:#f8fafc; margin:10px 0; padding:12px; border-radius:12px; display:flex; flex-direction:column}
-.subject b{font-size:15px}
-.links{display:flex; gap:8px; flex-wrap:wrap; margin-top:6px}
-.links a{padding:8px 12px; border-radius:20px; text-decoration:none; font-size:12px; font-weight:bold; background:#2563eb; color:white}
-.links a:hover{background:#0b1220}
-footer{text-align:center; padding:20px; color:#666}
+.subject{background:#f8fafc; margin:12px 0; padding:14px; border-radius:12px; border:1px solid #e2e8f0}
+.subject b{font-size:15px; color:#0b1220}
+.links{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.links a{padding:8px 14px; border-radius:20px; text-decoration:none; font-size:12px; font-weight:bold; color:white; display:inline-block}
+.design{background:#2563eb}
+.scheme{background:#059669}
+.notes{background:#d97706}
+.exams{background:#dc2626}
+.links a:hover{opacity:.8}
+footer{text-align:center; padding:20px; color:#666; background:#fff; margin-top:20px}
+a{word-break:break-all}
 </style>
 </head>
 <body>
 
 <header>
-<img src="alex.jpg" alt="Alex">
-<h1>Alex Portfolio</h1>
-<p>Teacher, Hockey Player and Coach | Blinders Hockey Club Meru | 0759679830</p>
+<img src="images/alex.jpg" alt="Alex Mugendi">
+<h1>Alex Mugendi</h1>
+<p>Teacher | Hockey Player & Coach | Blinders Hockey Club Meru</p>
+<p>📞 0759679830 | 📧 <a href="mailto:alexmugendi39@gmail.com" style="color:#93c5fd">alexmugendi39@gmail.com</a></p>
 </header>
 
-<div class="hockey">
-<img src="blinders1.jpg" alt="Blinders">
-<img src="blinders2.jpg" alt="Blinders">
-<img src="blinders3.jpg" alt="Blinders">
+<div class="about">
+<h2>About Me - My Hockey Journey 🏑</h2>
+<p>My name is <b>Alex Mugendi</b>, a passionate teacher and a dedicated hockey player and coach from Isiolo/Meru. My love for hockey has shaped my discipline, teamwork, and leadership both on and off the field.</p>
+<ul>
+<li><b>2017:</b> Started playing hockey after joining Form One - where my journey began.</li>
+<li><b>2020:</b> Together with my fellow teammates, we represented our school at the County Games and emerged <b>Position 3</b>.</li>
+<li><b>2024:</b> Won the Eastern Regional Hockey Tournament and qualified for the Nationals held at <b>Machakos TTC</b>.</li>
+<li><b>2026:</b> Led the Blinders Hockey Team as the <b>Assistant Captain</b>, won the Eastern Regionals and qualified for Nationals at <b>Homa Bay</b> where we emerged <b>Position 3 National-wide</b>.</li>
+</ul>
+<p>Through hockey, I have learned resilience, leadership, and the power of teamwork. Currently, I serve as a player and coach for Blinders Hockey Club Meru, nurturing the next generation of talents while also serving as a CBC teacher sharing educational resources.</p>
 </div>
 
-<!-- HAPA NDIO GRADES ZITA-INGIA AUTOMATIC -->
+<div class="hockey">
+<img src="images/blinders1.jpg" alt="Blinders Hockey">
+<img src="images/blinders2.jpg" alt="Blinders Team 2026">
+<img src="images/blinders3.jpg" alt="Blinders Action">
+</div>
+
+<!-- HAPA GRADES 1-6 ZOTE ZITAINGIA -->
 <div id="grades-container"></div>
 
-<footer>© 2026 Alex Portfolio | Isiolo - Meru | Blinders Hockey Club</footer>
+<footer>© 2026 Alex Portfolio | alexmugendi39@gmail.com | Isiolo - Meru | Blinders Hockey Club</footer>
 
 <script src="index.js"></script>
 </body>
