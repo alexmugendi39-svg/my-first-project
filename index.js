@@ -1,7 +1,7 @@
 const container = document.getElementById("grades-container");
 
 const grade1Map = {
-  "Mathematics": "GRADE-1-MATHEMATICS.pdf",
+  "Mathematics": "GRADE-1-mathematics.pdf",
   "English": "GRADE-1-ENGLISH.pdf",
   "Kiswahili": "GRADE-1-KISWAHILI.pdf",
   "Environmental": "GRADE-1-ENVIRONMENTAL.pdf",
