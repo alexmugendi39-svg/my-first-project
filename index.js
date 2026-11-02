@@ -18,11 +18,21 @@ const container = document.getElementById("grades-container");
 gradesData.forEach(g => {
   const gradeDiv = document.createElement("div");
   gradeDiv.className = "grade";
-  let html = `<h2>Grade ${g.grade} - ${g.areas.length} Learning Areas</h2><div class="areas">`;
+  let html = `<h2>Grade ${g.grade} - ${g.areas.length} Learning Areas</h2>`;
+  
   g.areas.forEach(subject => {
-    html += `<div class="subject">${subject}</div>`;
+    const cleanSubject = subject.replace(/ & /g, "-").replace(/ /g, "-");
+    html += `
+      <div class="subject">
+        <strong>${subject}</strong><br>
+        <a class="design" href="pdfs/grade${g.grade}/designs/${subject}.pdf" target="_blank">Design</a>
+        <a class="scheme" href="pdfs/grade${g.grade}/schemes/${subject}.pdf" target="_blank">Scheme</a>
+        <a class="notes" href="pdfs/grade${g.grade}/notes/${subject}.pdf" target="_blank">Notes</a>
+        <a class="exams" href="pdfs/grade${g.grade}/exams/${subject}.pdf" target="_blank">Exam</a>
+      </div>
+    `;
   });
-  html += `</div>`;
+  
   gradeDiv.innerHTML = html;
   container.appendChild(gradeDiv);
 });
