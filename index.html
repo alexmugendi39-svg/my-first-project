@@ -5,32 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alex M - Teacher & Hockey Player | Grade 1-12 Materials</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+#bot-box{transition:all .3s ease}
+.bot-msg{animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:translateY(0)}}
+#bot-dot{animation:pulse 1.5s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.2)}100%{transform:scale(1)}}
+</style>
 </head>
 <body class="bg-orange-50">
-<div class="max-w-4xl mx-auto p-4">
+<div class="max-w-4xl mx-auto p-4 pb-24">
 
-  <!-- PROFILE - ORANGE GRADIENT -->
+  <!-- PROFILE -->
   <div class="bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-400 rounded-2xl p-6 shadow-lg text-center text-white">
     <img src="images/alex.jpg" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-lg" alt="Alex M">
     <h1 class="text-3xl font-bold mt-3">Alex M</h1>
     <p class="font-semibold bg-white/20 rounded-full py-1 px-4 inline-block mt-2">Teacher | Hockey Player & Coach | Isiolo, Kenya</p>
     <p class="text-sm mt-2 font-medium">Grade 1 - 12 | All Learning Areas | CBC Aligned</p>
+    <div class="flex justify-center gap-2 mt-4 flex-wrap">
+      <a href="https://instagram.com/lionlion4063" target="_blank" class="bg-white text-pink-600 font-bold py-2 px-4 rounded-full text-sm">📸 @lionlion4063</a>
+      <a href="https://youtube.com/@alexmugendi7377" target="_blank" class="bg-red-600 text-white font-bold py-2 px-4 rounded-full text-sm">▶️ YouTube</a>
+      <a href="https://wa.me/254759679830" target="_blank" class="bg-green-600 text-white font-bold py-2 px-4 rounded-full text-sm">💬 WhatsApp</a>
+    </div>
   </div>
 
-  <!-- INTRODUCTION - LIGHT ORANGE -->
+  <!-- GOOGLE SEARCH -->
+  <div class="bg-white border-2 border-blue-300 rounded-2xl p-5 shadow mt-6 text-center">
+    <h3 class="font-bold text-blue-800 text-lg">🔍 Search Anything on Google</h3>
+    <p class="text-gray-600 text-sm">Tafuta notes, CBC, hockey, chochote — kama Google App, ukiwa hapa hapa</p>
+    <form action="https://www.google.com/search" method="GET" target="_blank" class="mt-3 flex justify-center">
+      <input type="text" name="q" placeholder="e.g. CBC Grade 7 schemes, hockey rules, KICD designs..." required class="w-[70%] max-w-[500px] p-3 border-2 border-blue-500 rounded-l-full outline-none">
+      <button type="submit" class="bg-blue-600 text-white font-bold px-5 rounded-r-full">Search 🔍</button>
+    </form>
+    <div class="flex gap-2 justify-center flex-wrap mt-3">
+      <a href="https://www.google.com/search?q=CBC+Grade+7+schemes+of+work" target="_blank" class="bg-blue-50 px-3 py-1 rounded-full text-xs font-bold text-blue-800">CBC Schemes</a>
+      <a href="https://www.google.com/search?q=KICD+curriculum+designs+download" target="_blank" class="bg-blue-50 px-3 py-1 rounded-full text-xs font-bold text-blue-800">KICD Designs</a>
+      <a href="https://www.google.com/search?q=hockey+rules+Kenya" target="_blank" class="bg-blue-50 px-3 py-1 rounded-full text-xs font-bold text-blue-800">Hockey Rules</a>
+      <a href="https://www.google.com/search?q=Grade+9+exams+Kenya" target="_blank" class="bg-blue-50 px-3 py-1 rounded-full text-xs font-bold text-blue-800">Grade 9 Exams</a>
+    </div>
+  </div>
+
+  <!-- INTRODUCTION -->
   <div class="bg-orange-100 border-2 border-orange-300 rounded-2xl p-6 shadow mt-6">
     <h2 class="text-2xl font-bold text-orange-800">👋 Hello, I'm Alex!</h2>
-    <p class="text-gray-800 mt-3 leading-relaxed">
-      Karibu! I'm Alex M - a passionate <b class="text-orange-700">Teacher</b> and <b class="text-green-700">Hockey Player & Coach</b> from Isiolo, Kenya.
-      I believe in discipline, teamwork, and hard work - both on the hockey pitch and in the classroom.
-      Just like in hockey where every pass matters, in education every lesson matters.
-    </p>
-    <p class="text-gray-800 mt-3 leading-relaxed">
-      I created this platform to help fellow Teachers, Parents and Learners access quality CBC Teaching Materials -
-      <b>Designs, Schemes, Lesson Notes, Records of Work and Exams</b> for Grade 1 to 12, in all Learning Areas:
-      English, Kiswahili, Mathematics, Science, Social Studies, CRE and more.
-    </p>
-
+    <p class="text-gray-800 mt-3 leading-relaxed">Karibu! I'm Alex M - a passionate <b class="text-orange-700">Teacher</b> and <b class="text-green-700">Hockey Player & Coach</b> from Isiolo, Kenya. I believe in discipline, teamwork, and hard work - both on the hockey pitch and in the classroom.</p>
+    <p class="text-gray-800 mt-3 leading-relaxed">I created this platform to help fellow Teachers, Parents and Learners access quality CBC Teaching Materials - <b>Designs, Schemes, Lesson Notes, Records of Work and Exams</b> for Grade 1 to 12, in all Learning Areas: English, Kiswahili, Mathematics, Science, Social Studies, CRE and more.</p>
     <h3 class="text-xl font-bold mt-6 text-green-800">🏑 My Hockey Journey</h3>
     <ul class="list-disc pl-5 mt-2 text-gray-800 space-y-1">
       <li>Active Hockey Player - Blinders Hockey Club, Meru 🏑</li>
@@ -38,7 +57,6 @@
       <li>Discipline, Teamwork & Leadership - From Pitch to Classroom</li>
       <li>Participated in County & Regional Hockey Tournaments</li>
     </ul>
-
     <h3 class="text-xl font-bold mt-6 mb-3 text-purple-800">📸 Hockey & Teaching Moments</h3>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
       <img src="images/blinders1.jpg" class="w-full h-48 object-cover rounded-xl border-4 border-orange-400" alt="Alex 1">
@@ -48,36 +66,50 @@
       <img src="images/blinders5.jpg" class="w-full h-48 object-cover rounded-xl border-4 border-pink-400" alt="Alex 5">
       <img src="images/alex.jpg" class="w-full h-48 object-cover rounded-xl border-4 border-yellow-400" alt="Alex portrait">
     </div>
-
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
       <a href="https://wa.me/254759679830?text=Habari%20Alex%2C%20nataka%20Teaching%20Materials" target="_blank" class="bg-green-600 text-white font-bold py-3 rounded-xl text-center shadow">💬 WhatsApp: 0759679830</a>
       <a href="https://drive.google.com/drive/folders/1zEkqZ3fkqSpw7YqGs5XzNeEFeHEdUp0E" target="_blank" class="bg-blue-600 text-white font-bold py-3 rounded-xl text-center shadow">📂 View on Google Drive</a>
     </div>
   </div>
 
-  <!-- LEARNING RESOURCES - COLOURFUL -->
+  <!-- LEARNING RESOURCES -->
   <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-blue-200 rounded-2xl p-6 shadow mt-6">
     <h2 class="text-2xl font-bold text-center text-purple-800">📚 Learning Resources - Grade 1 to 12</h2>
     <p class="text-center text-gray-600 text-sm mb-1">Click Grade to Open → Chagua Subject → Chagua 1 kati ya 5 Areas</p>
     <p class="text-center text-xs text-orange-600 mb-6 font-bold">5 AREAS: Designs | Schemes | Lesson Notes | Records of Work | Exams</p>
     <div id="grades-container" class="space-y-3"></div>
   </div>
-<!-- DISCLAIMER - KICD SAFE -->
-<div class="bg-yellow-50 border-2 border-yellow-400 rounded-2xl p-5 shadow mt-6">
-  <h3 class="font-bold text-yellow-800 text-lg">⚖️ Important Disclaimer</h3>
-  <p class="text-sm text-gray-700 mt-2 leading-relaxed">
-    <b>1. Curriculum Designs:</b> All Curriculum Designs shared here are official documents published by the <b>Kenya Institute of Curriculum Development (KICD)</b>. They are public and FREE on the KICD website. They are shared here for easy access and educational convenience only. They remain the property of KICD. I do not claim ownership of KICD Designs and I do not sell them.
-  </p>
-  <p class="text-sm text-gray-700 mt-2 leading-relaxed">
-    <b>2. My Original Materials:</b> Schemes of Work, Lesson Notes, Records of Work and Exams shared on this platform are my own original work, prepared by Alex M for teaching purposes.
-  </p>
-  <p class="text-sm text-gray-700 mt-2 leading-relaxed">
-    <b>3. 1 Year Free Offer:</b> This platform offers FREE access for 1 year to support fellow Teachers, Comrades, Parents and Learners. For official KICD materials, you can also download directly from <b>www.kicd.ac.ke</b>
-  </p>
-  <p class="text-xs text-gray-500 mt-3">© 2026 Alex M | Blinders Hockey Club, Meru | For Educational Use Only</p>
-</div>
-<!-- MWISHO WA DISCLAIMER -->
-  <!-- COMMENTS - PINK / GREEN -->
+
+  <!-- INSTAGRAM -->
+  <div class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-2xl p-6 shadow mt-6 text-center text-white">
+    <h2 class="text-2xl font-bold">📸 Follow On Instagram</h2>
+    <p class="text-sm mt-1">Hockey Moments • Teaching Life • Isiolo — <b>@lionlion4063</b></p>
+    <div class="grid grid-cols-3 gap-2 max-w-md mx-auto mt-4">
+      <img src="images/blinders1.jpg" class="w-full h-28 object-cover rounded-xl">
+      <img src="images/blinders3.jpg" class="w-full h-28 object-cover rounded-xl">
+      <img src="images/alex.jpg" class="w-full h-28 object-cover rounded-xl">
+    </div>
+    <a href="https://instagram.com/lionlion4063" target="_blank" class="inline-block bg-white text-pink-600 font-bold py-3 px-6 rounded-full mt-4 shadow">Follow @lionlion4063 →</a>
+  </div>
+
+  <!-- YOUTUBE -->
+  <div class="bg-red-600 rounded-2xl p-6 shadow mt-6 text-center text-white">
+    <h2 class="text-2xl font-bold">▶️ Watch On YouTube</h2>
+    <p class="text-sm mt-1 text-red-100">Hockey Training • Teaching Tips • CBC Explained — @alexmugendi7377</p>
+    <p class="text-4xl my-3">🏑📚</p>
+    <a href="https://youtube.com/@alexmugendi7377" target="_blank" class="inline-block bg-white text-red-600 font-bold py-3 px-6 rounded-full shadow">Subscribe @alexmugendi7377 →</a>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="bg-yellow-50 border-2 border-yellow-400 rounded-2xl p-5 shadow mt-6">
+    <h3 class="font-bold text-yellow-800 text-lg">⚖️ Important Disclaimer</h3>
+    <p class="text-sm text-gray-700 mt-2 leading-relaxed"><b>1. Curriculum Designs:</b> All Curriculum Designs shared here are official documents published by the <b>Kenya Institute of Curriculum Development (KICD)</b>. They are public and FREE on the KICD website. They are shared here for easy access and educational convenience only. They remain the property of KICD. I do not claim ownership of KICD Designs and I do not sell them.</p>
+    <p class="text-sm text-gray-700 mt-2 leading-relaxed"><b>2. My Original Materials:</b> Schemes of Work, Lesson Notes, Records of Work and Exams shared on this platform are my own original work, prepared by Alex M for teaching purposes.</p>
+    <p class="text-sm text-gray-700 mt-2 leading-relaxed"><b>3. 1 Year Free Offer:</b> This platform offers FREE access for 1 year to support fellow Teachers, Comrades, Parents and Learners. For official KICD materials, you can also download directly from <b>www.kicd.ac.ke</b></p>
+    <p class="text-xs text-gray-500 mt-3">© 2026 Alex M | Blinders Hockey Club, Meru | For Educational Use Only</p>
+  </div>
+
+  <!-- COMMENTS -->
   <div class="bg-pink-50 border-2 border-pink-300 rounded-2xl p-6 shadow mt-6">
     <h2 class="text-2xl font-bold text-center text-pink-700">💬 Leave a Comment / Feedback</h2>
     <p class="text-center text-gray-600 text-sm mb-4">Umeipenda platform? Niambie hapa chini!</p>
@@ -97,12 +129,41 @@
     <div id="comments-list" class="mt-6 space-y-3"></div>
   </div>
 
-  <!-- FOOTER - DARK -->
+  <!-- FOOTER -->
   <div class="bg-gray-900 text-white rounded-2xl p-6 shadow mt-6 text-center">
     <p class="font-bold text-orange-400">Need Help? WhatsApp Alex - 0759679830</p>
+    <p class="text-sm mt-2"><a href="https://instagram.com/lionlion4063" class="underline">Instagram @lionlion4063</a> • <a href="https://youtube.com/@alexmugendi7377" class="underline">YouTube @alexmugendi7377</a> • <a href="https://www.google.com/search?q=Alex+M+Teacher+Isiolo" target="_blank" class="underline">Find Me on Google</a></p>
     <p class="text-xs text-gray-400 mt-1">© 2026 Alex M - Teacher & Hockey Coach | Teaching Materials</p>
   </div>
+</div>
 
+<!-- ============ WHATSAPP BOT - FLOATING ============ -->
+<div class="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3">
+  <!-- Bot Chat Window -->
+  <div id="bot-box" class="hidden w-[320px] max-w-[calc(100vw-2rem)] bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-green-500">
+    <div class="bg-green-600 text-white p-3 flex items-center gap-3">
+      <img src="images/alex.jpg" class="w-10 h-10 rounded-full object-cover border-2 border-white" onerror="this.src='https://ui-avatars.com/api/?name=Alex+M&background=16a34a&color=fff'">
+      <div class="flex-1">
+        <p class="font-bold text-sm">Alex M - Assistant Bot 🤖</p>
+        <p class="text-xs text-green-100 flex items-center gap-1"><span id="bot-dot" class="w-2 h-2 bg-green-300 rounded-full inline-block"></span> Online • Replies instantly</p>
+      </div>
+      <button onclick="toggleBot()" class="text-xl leading-none px-1">✕</button>
+    </div>
+    <div id="bot-messages" class="h-[300px] overflow-y-auto p-3 space-y-2 bg-[#ece5dd] text-sm"></div>
+    <div class="p-2 bg-white border-t flex gap-1 flex-wrap">
+      <button onclick="botQuick('materials')" class="bg-green-50 border border-green-200 text-green-800 text-xs font-bold px-2 py-1 rounded-full">📚 Materials</button>
+      <button onclick="botQuick('grades')" class="bg-orange-50 border border-orange-200 text-orange-800 text-xs font-bold px-2 py-1 rounded-full">🎓 Grades</button>
+      <button onclick="botQuick('hockey')" class="bg-blue-50 border border-blue-200 text-blue-800 text-xs font-bold px-2 py-1 rounded-full">🏑 Hockey</button>
+      <button onclick="botQuick('human')" class="bg-purple-50 border border-purple-200 text-purple-800 text-xs font-bold px-2 py-1 rounded-full">👨‍🏫 Talk to Alex</button>
+    </div>
+    <div class="p-2 bg-white border-t flex gap-2">
+      <input id="bot-input" type="text" placeholder="Andika hapa..." onkeypress="if(event.key==='Enter') sendBotMsg()" class="flex-1 border rounded-full px-3 py-2 text-sm outline-none">
+      <button onclick="sendBotMsg()" class="bg-green-600 text-white w-10 h-10 rounded-full font-bold">➤</button>
+    </div>
+  </div>
+  <!-- Floating Button -->
+  <button onclick="toggleBot()" class="relative bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-2xl text-3xl flex items-center justify-center">💬<span class="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">1</span></button>
+  <div id="bot-bubble" class="bg-white shadow-lg rounded-2xl rounded-br-sm px-3 py-2 text-xs font-bold text-gray-800 max-w-[220px]">Habari! 👋 Niko hapa kukusaidia kupata Materials. Bonyeza hapa!</div>
 </div>
 
 <script>
@@ -168,6 +229,63 @@ function postComment(){
   document.getElementById('comment-text').value = "";
   alert("Asante! Comment yako imewekwa!");
 }
+
+// ===== WHATSAPP BOT LOGIC =====
+let botOpened = false;
+function toggleBot(){
+  const box = document.getElementById('bot-box');
+  const bubble = document.getElementById('bot-bubble');
+  box.classList.toggle('hidden');
+  if(!box.classList.contains('hidden')){
+    bubble.style.display='none';
+    if(!botOpened){
+      botOpened = true;
+      setTimeout(()=> botReply("Habari! 👋 Karibu kwa website ya Alex M.<br><br>Mimi ni <b>Bot wa Alex</b> 🤖. Niko hapa kukusaidia.<br><br>Unataka nini leo?<br>📚 <b>Materials</b><br>🎓 <b>Grades</b><br>🏑 <b>Hockey</b><br>👨‍🏫 <b>Talk to Alex</b><br><br>Bonyeza button hapo chini au andika!"), 300);
+    }
+  } else {
+    bubble.style.display='block';
+  }
+}
+function botQuick(type){ sendBotMsg(type); }
+function sendBotMsg(preset){
+  const input = document.getElementById('bot-input');
+  let text = preset || input.value.trim();
+  if(!text) return;
+  const msgs = document.getElementById('bot-messages');
+  msgs.innerHTML += `<div class="bot-msg flex justify-end"><div class="bg-green-500 text-white px-3 py-2 rounded-2xl rounded-br-sm max-w-[85%]">${text}</div></div>`;
+  input.value = "";
+  msgs.scrollTop = msgs.scrollHeight;
+  setTimeout(()=> botReply(getBotAnswer(text)), 600);
+}
+function botReply(html){
+  const msgs = document.getElementById('bot-messages');
+  msgs.innerHTML += `<div class="bot-msg flex justify-start"><div class="bg-white px-3 py-2 rounded-2xl rounded-bl-sm shadow max-w-[90%]">${html}<p class="text-[10px] text-gray-400 mt-1">Alex Bot • Just now</p></div></div>`;
+  msgs.scrollTop = msgs.scrollHeight;
+}
+function getBotAnswer(q){
+  q = q.toLowerCase();
+  if(q.includes('material') || q.includes('notes') || q.includes('scheme') || q.includes('exam') || q.includes('design')){
+    return `Sawa! 📚<br><br>Materials zote ziko hapa:<br><b>1.</b> Chagua Grade yako hapo juu<br><b>2.</b> Chagua Subject<br><b>3.</b> Chagua 1 kati ya 5: Designs | Schemes | Lesson Notes | Records | Exams<br><br><a href="${DRIVE}" target="_blank" style="color:#2563eb; font-weight:bold; text-decoration:underline;">📂 Fungua Google Drive Yote →</a><br><br>Ni Grade gani unataka? Andika e.g. <b>Grade 7</b>`;
+  }
+  if(q.includes('grade')){
+    return `Poa! 🎓<br><br>Tuna Grade 1 hadi 12.<br>Scroll juu kidogo → Bonyeza Grade yako → Itafunguka subjects zote.<br><br>Niambie Grade gani unataka nikusaidie? E.g. <b>Grade 4</b> au <b>Grade 10</b>`;
+  }
+  if(q.includes('hockey') || q.includes('blinders') || q.includes('coach')){
+    return `🏑 Hockey! Unajua vizuri!<br><br>Alex ni Player wa <b>Blinders Hockey Club, Meru</b> na Coach wa watoto shuleni.<br><br>Discipline + Teamwork = Mafanikio!<br><br>Follow hockey moments:<br>📸 Instagram: <a href="https://instagram.com/lionlion4063" target="_blank" style="color:#db2777; font-weight:bold;">@lionlion4063</a><br>▶️ YouTube: <a href="https://youtube.com/@alexmugendi7377" target="_blank" style="color:#dc2626; font-weight:bold;">@alexmugendi7377</a>`;
+  }
+  if(q.includes('human') || q.includes('talk') || q.includes('alex') || q.includes('whatsapp') || q.includes('ongea') || q.includes('mwalimu')){
+    return `Sawa! 👨‍🏫 Unataka kuongea na Alex mwenyewe?<br><br>Bonyeza hapa nimpelekee ujumbe wako moja kwa moja WhatsApp:<br><br><a href="https://wa.me/254759679830?text=Habari%20Alex%2C%20nimetoka%20kwenye%20website%20yako%2C%20nataka%20kuongea%20nawe" target="_blank" style="display:inline-block; background:#16a34a; color:white; padding:8px 14px; border-radius:999px; font-weight:bold;">💬 Chat na Alex Sasa →</a><br><br>Atakujibu akitoka class / pitch!`;
+  }
+  if(q.includes('hi') || q.includes('habari') || q.includes('hello') || q.includes('sasa') || q.includes('mambo')){
+    return `Habari! 👋 Mambo vipi?<br><br>Karibu sana! Mimi ni Bot wa Alex.<br>Unataka <b>Materials</b>, <b>Hockey</b> au <b>Kuongea na Alex</b>?`;
+  }
+  if(q.includes('price') || q.includes('bei') || q.includes('lipa') || q.includes('free') || q.includes('bure')){
+    return `Hii ni <b>FREE kwa 1 Year!</b> 🎉<br><br>Hakuna kulipa. Ni msaada kwa Teachers, Parents na Learners.<br><br>Chagua Grade yako hapo juu uanze kudownload!`;
+  }
+  return `Nimekuelewa! 👍<br><br>Lakini ili nikusaidie vizuri, chagua moja:<br>📚 Andika <b>materials</b> - kupata notes<br>🎓 Andika <b>grade</b> - kupata Grade<br>🏑 Andika <b>hockey</b> - kuhusu hockey<br>👨‍🏫 Andika <b>talk</b> - kuongea na Alex mwenyewe`;
+}
+// Auto open bot bubble after 3 sec
+setTimeout(()=>{ const b=document.getElementById('bot-bubble'); if(b) b.style.display='block'; }, 3000);
 </script>
 </body>
 </html>
